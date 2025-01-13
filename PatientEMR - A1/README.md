@@ -1,7 +1,3 @@
-Here’s an updated version of your README with added **design choices** and **code explanations**:
-
----
-
 # PatientEMR - A1
 
 ### Created by Elsa Bismuth
