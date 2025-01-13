@@ -29,9 +29,30 @@
 		4F6B5F7D2D34A3B3009BA6BB /* PatientEMR - A1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PatientEMR - A1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4F6B5FB42D34EC7A009BA6BB /* Exceptions for "PatientEMR - A1" folder in "PatientEMR - A1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				README.md,
+			);
+			target = 4F6B5F612D34A3B2009BA6BB /* PatientEMR - A1 */;
+		};
+		4F6B5FB52D34EC7A009BA6BB /* Exceptions for "PatientEMR - A1" folder in "PatientEMR - A1Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				README.md,
+			);
+			target = 4F6B5F722D34A3B3009BA6BB /* PatientEMR - A1Tests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4F6B5F642D34A3B2009BA6BB /* PatientEMR - A1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4F6B5FB42D34EC7A009BA6BB /* Exceptions for "PatientEMR - A1" folder in "PatientEMR - A1" target */,
+				4F6B5FB52D34EC7A009BA6BB /* Exceptions for "PatientEMR - A1" folder in "PatientEMR - A1Tests" target */,
+			);
 			path = "PatientEMR - A1";
 			sourceTree = "<group>";
 		};
