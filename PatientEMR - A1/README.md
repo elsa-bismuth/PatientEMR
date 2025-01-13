@@ -101,6 +101,8 @@ The code was written by Elsa Bismuth, incorporating AI guidance only for high-le
 - Prompt: "How can I generate unique MRNs?"
 - Prompt: "Should I have this in BloodType.swift or Patient.swift?"
 - Prompt: "Can you explain how the logic works?"
+
+
 The very extensive documentation took a lot of time to read. However, I still needed some guidance on the steps to follow to create a project from scratch: when to create a new file, how to run tests, how to connect it to GitHub, etc. It was hard to learn a new language in just a few days, so ChatGPT helped me speed up the process. I also used it to generate the README file. 
 Note: I wanted to share the link but because I uploaded images in the thread, it is impossible to share it. Please let me know if you would like to see the thread next time in class. 
 
