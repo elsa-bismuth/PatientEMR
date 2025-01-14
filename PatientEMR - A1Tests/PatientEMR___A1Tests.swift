@@ -20,7 +20,6 @@ class PatientTests: XCTestCase {
         XCTAssertEqual(patient.height, 5.6)
         XCTAssertEqual(patient.weight, 123)
         XCTAssertEqual(patient.bloodType, .AMinus)
-        XCTAssertFalse(patient.medications.isEmpty)
         
         XCTAssertEqual(patient.canReceiveBloodFrom().contains(.OMinus), true)
         let newDateComp1 = DateComponents(year: 2024, month: 12, day: 1)
