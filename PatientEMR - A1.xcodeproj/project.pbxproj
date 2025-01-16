@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4FFE08882D37B59E00B344F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FFE08872D37B59E00B344F8 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4F6B5F742D34A3B3009BA6BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		4F6B5F622D34A3B2009BA6BB /* PatientEMR - A1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PatientEMR - A1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6B5F732D34A3B3009BA6BB /* PatientEMR - A1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PatientEMR - A1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6B5F7D2D34A3B3009BA6BB /* PatientEMR - A1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PatientEMR - A1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFE08872D37B59E00B344F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -96,6 +101,7 @@
 		4F6B5F592D34A3B2009BA6BB = {
 			isa = PBXGroup;
 			children = (
+				4FFE08872D37B59E00B344F8 /* README.md */,
 				4F6B5F642D34A3B2009BA6BB /* PatientEMR - A1 */,
 				4F6B5F762D34A3B3009BA6BB /* PatientEMR - A1Tests */,
 				4F6B5F802D34A3B3009BA6BB /* PatientEMR - A1UITests */,
@@ -233,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FFE08882D37B59E00B344F8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
