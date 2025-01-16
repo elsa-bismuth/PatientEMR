@@ -1,3 +1,7 @@
+Great! Based on the additional details you provided, here’s an updated and comprehensive `README.md` file that highlights these design details and showcases the robust user experience your app offers.
+
+---
+
 # PatientEMR
 
 PatientEMR is a Swift-based iOS application for managing electronic medical records (EMRs) of patients. It allows users to add, view, and manage patient information, including medications. The application is built using **SwiftUI** and showcases features like searchable patient lists, medication prescription management, validation checks, and a clean, intuitive user interface.
@@ -85,16 +89,28 @@ PatientEMR is a Swift-based iOS application for managing electronic medical reco
 1. In the Patient Detail View, tap the **"Prescribe Medication"** button.
 2. Fill out medication details (Name, Dose, Unit, Route, Frequency, and Duration).
 3. Save the medication. If the form is not filled correctly, an explicit error message will be displayed, guiding the user to correct their input.
-4. If the form is valid, the app automatically go back to the patient details view.
+4. If the form is valid, the app automatically navigates back to the patient details view.
 
 ---
 
 ## Attributions
 
 This project contains sections of code that were AI-generated using **ChatGPT by OpenAI**. The following components were influenced or generated with AI assistance:
-- **Navigation Logic**: Automatically navigating back after saving patients or medications. Keeping track of the Patient Store across the views. 
-- **Documentation**: Generate a draft for the documentation based on my code. I then modified it and added some more explanation about the design choices.
-- **Generating Patients and Medications**: Following my definition of `Patient` and `Medication`, I used ChatGPT to generate a list of patients to populate the database (Patient Store).
+- **Validation Logic**: For checking valid numeric inputs and displaying explicit error messages for invalid inputs.
+- **UI Enhancements**: Improved layout and colors for displaying patient details and medications.
+- **Navigation Logic**: Automatically navigating back after saving patients or medications.
+- **Code Comments and Structure**: Refined explanations and code structure.
+
+Attributions for the AI-generated code are marked in comments throughout the source files.
+
+Example:
+```swift
+// AI-Generated Code: Validation logic for numeric inputs
+if Double(dose) == nil || Int(frequency) == nil || Int(duration) == nil {
+    errorMessage = "Please enter valid numeric values for Dose, Frequency, and Duration."
+    return
+}
+```
 
 ---
 
@@ -131,4 +147,8 @@ The project includes a UI test to verify the **"Add Patient"** functionality:
 
 ## Release Information
 
-This project is tagged as `v0.1.0` to mark the completion of the user interface and functionality. The release can be found [here](https://github.com/elsa-bismuth/PatientEMR/releases/tag/v0.1.0).
+This project is tagged as `v0.1.0` to mark the completion of the user interface and functionality. The release can be found [here](https://github.com/YourGitHubUsername/PatientEMR/releases/tag/v0.1.0).
+
+---
+
+Let me know if you’d like further edits or enhancements!

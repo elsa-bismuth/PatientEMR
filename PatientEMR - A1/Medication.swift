@@ -1,6 +1,7 @@
 //
 //  Medication.swift
 //  PatientEMR - A1
+//  This files defines a Medication.
 //
 //  Created by Elsa Bismuth on 12/01/2025.
 //
@@ -19,5 +20,6 @@ struct Medication {
 }
 
 enum MedicationError: Error {
-    case duplicateMedication // Case for duplicate medications
+    case duplicateMedication 
+    case invalidInput
 }

@@ -121,12 +121,14 @@ class PatientTests: XCTestCase {
     }
         
     func testCanReceiveBloodFrom() {
-        let patient = Patient(firstName: "Elsa", lastName: "Bis", dateOfBirth: Date(), height: 5.7, weight: 140, bloodType: .BPlus, medications: [])
+        var patient = Patient(firstName: "Elsa", lastName: "Bis", dateOfBirth: Date(), height: 5.7, weight: 140, bloodType: .BPlus, medications: [])
         let compatibleBloodTypes = patient.canReceiveBloodFrom()
         
         XCTAssertTrue(compatibleBloodTypes.contains(.BPlus))
         XCTAssertTrue(compatibleBloodTypes.contains(.OMinus))
         XCTAssertFalse(compatibleBloodTypes.contains(.APlus))
+        XCTAssertFalse(compatibleBloodTypes.contains(.ABPlus))
+        XCTAssertFalse(compatibleBloodTypes.contains(.ABMinus))
     }
 
 }

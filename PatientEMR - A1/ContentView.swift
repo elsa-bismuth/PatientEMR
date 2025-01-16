@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var patientStore = PatientStore()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            PatientListView(patientStore: patientStore)
         }
-        .padding()
     }
 }
 

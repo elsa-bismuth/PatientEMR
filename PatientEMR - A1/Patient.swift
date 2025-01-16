@@ -1,6 +1,7 @@
 //
 //  Patient.swift
 //  PatientEMR - A1
+//  This file determines the patient structure and some methods associated to it.
 //
 //  Created by Elsa Bismuth on 12/01/2025.
 //
@@ -90,5 +91,11 @@ struct Patient {
         } else {
             return []
         }
+    }
+}
+
+extension Patient: Identifiable {
+    var id: String {
+        MRN
     }
 }

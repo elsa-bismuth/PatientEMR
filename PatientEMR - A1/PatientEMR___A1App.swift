@@ -1,23 +1,12 @@
-//___FILEHEADER___
-
-//import SwiftUI
-//
-//@main
-//struct ___PACKAGENAME:identifier___App: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//    }
-//}
+// This is for the app launch. Shows the content view.
 
 import SwiftUI
 
 @main
-struct MinimalApp: App {
+struct PatientEMRApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Testing Mode")
+            ContentView()
         }
     }
 }

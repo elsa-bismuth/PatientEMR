@@ -1,6 +1,7 @@
 //
 //  BloodType.swift
 //  PatientEMR - A1
+//  This file defines the Blood Type structure and determines the compatible blood types.
 //
 //  Created by Elsa Bismuth on 12/01/2025.
 //
