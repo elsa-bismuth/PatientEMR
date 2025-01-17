@@ -25,6 +25,7 @@ struct PrescribeMedicationView: View {
     let units = ["mg", "ml", "g", "tablets"]
     let routes = ["Oral", "Intravenous", "Subcutaneous", "Inhalation"]
     
+    /// Checks that all fields are filled
     var isFormValid: Bool {
         medicationName != "" && dose != "" && unit != "" && route != "" && frequency != "" && duration != ""
     }
@@ -78,6 +79,8 @@ struct PrescribeMedicationView: View {
                             throw MedicationError.duplicateMedication
                         } else if Double(dose) == nil || Int(frequency) == nil || Int(duration) == nil {
                             throw MedicationError.invalidInput
+                        } else if !medicationName.contains(where: { $0.isLetter }) {
+                            throw MedicationError.invalidName
                         } else {
                             medications.append(newMedication)
                             dismiss()
@@ -86,6 +89,8 @@ struct PrescribeMedicationView: View {
                         errorMessage = "Medication already prescribed."
                     } catch MedicationError.invalidInput {
                         errorMessage = "Invalid input: Please check that dose, frequency, and duration are digits."
+                    } catch MedicationError.invalidName {
+                        errorMessage = "Invalid name: Medication name must contain at least one letter."
                     } catch {
                         errorMessage = "An unknown error occurred."
                     }

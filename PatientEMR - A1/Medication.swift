@@ -17,9 +17,17 @@ struct Medication {
     let route: String
     let frequency: Int
     let duration: Int
+    
+    func isActive() -> Bool {
+        guard let endDate = Calendar.current.date(byAdding: .day, value: duration, to: datePrescribed) else {
+            return false
+        }
+        return endDate > Date()
+    }
 }
 
 enum MedicationError: Error {
     case duplicateMedication 
     case invalidInput
+    case invalidName
 }

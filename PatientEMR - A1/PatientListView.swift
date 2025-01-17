@@ -27,7 +27,8 @@ struct PatientListView: View {
                         VStack(alignment: .leading) {
                             Text("\(patient.getInfo())")
                                 .font(.headline)
-                            Text("MRN: \(patient.MRN)")
+                            // Only show first 5 digits
+                            Text("MRN: \(patient.MRN.prefix(5))... ")
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }

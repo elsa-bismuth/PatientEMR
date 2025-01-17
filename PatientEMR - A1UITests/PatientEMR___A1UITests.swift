@@ -17,8 +17,8 @@ final class PatientEMRUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    @MainActor
-    func testAddPatient() throws {
+    func testAddPatient() {
+        
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
@@ -54,11 +54,13 @@ final class PatientEMRUITests: XCTestCase {
         weightField.typeText("130")
 
         // Select a date for the Date of Birth
-        let datePicker = app.datePickers["Date of Birth"]
-        datePicker.tap()
-        app.datePickers.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "May")
-        app.datePickers.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "29")
-        app.datePickers.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "2002")
+        let datePickersQuery = app.datePickers["Date of Birth"]
+        datePickersQuery.tap()
+        app.staticTexts["29"].tap()
+        app.staticTexts["January 2025"].tap()
+        app.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "May")
+        app.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "2002")
+        app.buttons["PopoverDismissRegion"].tap()
 
         // We have filled all the fields! Save the patient
         XCTAssertTrue(app.buttons["Save Patient"].exists)
